@@ -1,18 +1,10 @@
+using DancingLine.Singleton;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class GameCharacter : MonoBehaviour
+public class GameCharacter : MonoBehaviourSingleton<GameCharacter>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

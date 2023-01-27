@@ -1,25 +1,9 @@
-﻿using UnityEngine;
-using DancingLine.Level.Animations;
+﻿using DancingLine.Singleton;
 
 namespace DancingLine.GameCamera
 {
-	public class CameraHolder : ObjectFollower
+	public class CameraHolder : MonoBehaviourSingleton<CameraHolder>
 	{
-        protected override void Update()
-        {
-            UpdateFollower();
-        }
-
-        #region Follow
-        public static bool FollowHero = true;
-        void UpdateFollower()
-        {
-            if(FollowHero) 
-                base.Update();
-        }
-        #endregion
-
-
+       
     }
-
 }

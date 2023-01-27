@@ -11,9 +11,10 @@ namespace DancingLine.Level.Animations
             var moveVec = target.position + offset - follower.position;
             if (!StayConst)
             {
-                follower.Translate(moveVec.x * Time.smoothDeltaTime * LerpSpeed.x,
-                    moveVec.y * Time.smoothDeltaTime * LerpSpeed.y,
-                    moveVec.z * Time.smoothDeltaTime * LerpSpeed.z);
+                var fwd = moveVec * Time.smoothDeltaTime;
+                fwd.Scale(LerpSpeed);
+
+                follower.Translate(fwd);
             }
             else
             {
