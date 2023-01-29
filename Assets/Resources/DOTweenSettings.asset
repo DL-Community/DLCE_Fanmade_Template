@@ -21,17 +21,17 @@ MonoBehaviour:
   useSmoothDeltaTime: 0
   maxSmoothUnscaledTime: 0.15
   rewindCallbackMode: 0
-  showUnityEditorReport: 0
+  showUnityEditorReport: 1
   logBehaviour: 0
   drawGizmos: 1
-  defaultRecyclable: 0
+  defaultRecyclable: 1
   defaultAutoPlay: 3
   defaultUpdateType: 0
   defaultTimeScaleIndependent: 0
   defaultEaseType: 6
   defaultEaseOvershootOrAmplitude: 1.70158
   defaultEasePeriod: 0
-  defaultAutoKill: 1
+  defaultAutoKill: 0
   defaultLoopType: 0
   debugMode: 0
   debugStoreTargetId: 1
@@ -49,6 +49,6 @@ MonoBehaviour:
     deAudioEnabled: 0
     deUnityExtendedEnabled: 0
     epoOutlineEnabled: 0
-  createASMDEF: 0
+  createASMDEF: 1
   showPlayingTweens: 0
   showPausedTweens: 0
