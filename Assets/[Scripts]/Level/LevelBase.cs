@@ -26,7 +26,7 @@ namespace DancingLine.Level
 
         public int DiamondsCollected
         {
-            get => Mathf.Min(UserDataManager.LoadInt(DiamondDataName), 10) ;
+            get => Mathf.Min(UserDataManager.LoadInt(DiamondDataName), 10);
             set => UserDataManager.Save(DiamondDataName, value);
         }
         #endregion
