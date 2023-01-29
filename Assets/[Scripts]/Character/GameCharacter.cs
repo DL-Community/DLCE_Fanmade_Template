@@ -1,10 +1,17 @@
 using DancingLine.Singleton;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class GameCharacter : MonoBehaviourSingleton<GameCharacter>
+namespace DancingLine.Character
 {
+    public class GameCharacter : MonoBehaviourSingleton<GameCharacter>
+    {
+        public Hero HeroObject;
+        public void SetPosition(Vector3 pos)
+        {
+            transform.position = pos;
+            HeroObject.SetPosition(pos);
+        }
+        //todo:角色开始/重置/KILL（停止）功能
+    }
     
 }

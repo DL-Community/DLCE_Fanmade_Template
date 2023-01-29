@@ -2,8 +2,8 @@
 
 namespace DancingLine.GameCamera
 {
-	public class CameraHolder : MonoBehaviourSingleton<CameraHolder>
+	public sealed class CameraHolder : MonoBehaviourSingleton<CameraHolder>
 	{
-       
+       //TODO 相机动画：位移 旋转 缩放
     }
 }

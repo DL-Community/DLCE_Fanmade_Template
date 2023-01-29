@@ -6,7 +6,7 @@ using DancingLine.Level;
 
 namespace DancingLine.GameCamera
 {
-	public class CameraFollower : ObjectFollower
+	public sealed class CameraFollower : ObjectFollower
 	{
 		public static bool FollowHero = true;
 		static CameraFollower instance;

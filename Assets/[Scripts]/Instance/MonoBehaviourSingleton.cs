@@ -22,10 +22,11 @@ namespace DancingLine.Singleton
 		}
 		static string TypeName => typeof(T).Name;
         static T NewInstance()
-		{
-            var instance = new GameObject("[Instance] " + TypeName).AddComponent<T>();
-			Debug.Log("Creating instance of " + TypeName, instance);
-
+        {
+	        var typeName = TypeName;
+            var instance = new GameObject($"[Instance] {typeName}" ).AddComponent<T>();
+            
+            Debug.Log($"Creating instance of {typeName}", instance);
 			return instance;
         }
 	}
