@@ -1,4 +1,5 @@
-﻿using DancingLine.Singleton;
+﻿using DancingLine.Character;
+using DancingLine.Singleton;
 using UnityEngine;
 
 #nullable enable
@@ -15,8 +16,10 @@ namespace DancingLine.Level
 
         [Header("关卡名")]
         public string Name = "Level Name";
-        
 
+        public PlayerPosition StartPosition;
+        PlayerPosition _initStartPosition;
+        
         public string DataName => Name.Replace(" ", "_");
 
         #region Diamond Data
@@ -56,11 +59,32 @@ namespace DancingLine.Level
         {
             Init();
         }
-
+        
+        public GameCharacter Character => GameCharacter.Instance;
+        public static bool Initialized { get; private set; }
         void Init()
+        {
+            InitCharacters();
+            InitCamera();
+            CollectLoadedObjects();
+            Initialized = true;
+        }
+        
+        void InitCharacters()
+        {
+            _initStartPosition = StartPosition;
+            Character.Init(_initStartPosition.PlayerPositions[0].position, _initStartPosition.Direction);
+        }
+
+        void InitCamera()
         {
             
         }
 
+        
+        void CollectLoadedObjects()
+        {
+            
+        }
     }
 }
