@@ -1,8 +1,4 @@
-﻿using System;
-using DancingLine.Character;
-using UnityEngine;
-using DancingLine.Level.Animations;
-using DancingLine.Level;
+﻿using DancingLine.Level.Animations;
 
 namespace DancingLine.GameCamera
 {

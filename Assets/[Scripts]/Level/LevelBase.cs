@@ -1,7 +1,7 @@
-﻿using System;
-using DancingLine.Singleton;
-using JetBrains.Annotations;
+﻿using DancingLine.Singleton;
 using UnityEngine;
+
+#nullable enable
 
 namespace DancingLine.Level
 {
@@ -20,8 +20,8 @@ namespace DancingLine.Level
         public string DataName => Name.Replace(" ", "_");
 
         #region Diamond Data
-        
-        [CanBeNull] string _diamondDataName;
+
+        string? _diamondDataName;
         string DiamondDataName => _diamondDataName ??= $"{DataName}checkpointsReached";
 
         public int DiamondsCollected
@@ -34,7 +34,7 @@ namespace DancingLine.Level
 
         #region Stars Data
         
-        string _starsDataName;
+        string? _starsDataName;
         string StarsDataName => _starsDataName ??= $"{DataName}_StarsCollectedDataName";
         
         public int StarsCollected

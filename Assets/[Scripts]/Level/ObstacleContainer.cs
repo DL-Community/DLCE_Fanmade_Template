@@ -1,5 +1,4 @@
-﻿using System;
-using DancingLine.Level.Triggers;
+﻿using DancingLine.Level.Triggers;
 using UnityEngine;
 
 namespace DancingLine.Level
